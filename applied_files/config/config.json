@@ -1,0 +1,39 @@
+{
+  "app_name": "asbp",
+  "openapi_filepath": "openapi.json",
+  "streaming": {
+    "listen_timeout": 0.01,
+    "ping_timeout": 5
+  },
+  "logger": {
+    "log_file": "applied_files/logs/main.log",
+    "rotation_trigger": "100 MB",
+    "compression": "tar",
+    "retention": "1 day"
+  },
+  "server": {
+    "file_store_path": "applied_files/media",
+    "static_url": "/static",
+    "static_dir": "applied_files/media"
+  },
+  "sanic": {
+    "host": "0.0.0.0",
+    "port": 8003,
+    "fast": true,
+    "debug": true
+  },
+  "database": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "testuser",
+    "password": "Fedora132",
+    "database": "testesmdb",
+    "db_schema": "ae",
+    "with_migrations": false,
+    "migrations_path": "applied_files/migrations"
+  },
+  "face_service": {
+    "host": "",
+    "port": ""
+  }
+}

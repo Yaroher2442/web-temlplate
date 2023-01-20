@@ -1,0 +1,18 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 38844,
+    "streaming": {
+    }
+  },
+  "db_config": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "aedb",
+    "user": "testuser",
+    "password": "2442",
+    "db_schema": "ae",
+    "with_migrations": false,
+    "migrations_path": ""
+  }
+}
