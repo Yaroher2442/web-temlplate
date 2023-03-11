@@ -16,8 +16,6 @@ __pycache__/
 #logs
 logs/*.log
 
-#pdm
-.pdm.toml
 
 # C extensions
 *.so
@@ -80,11 +78,8 @@ __pypackages__/
 
 # Environments
 .env
-.env.dev
 .venv
-env/
 venv/
-ENV/
 env.bak/
 venv.bak/
 
@@ -103,8 +98,5 @@ venv.bak/
 # Cython debug symbols
 cython_debug/
 
-infrastructure/database/migrations/
-applied_files/logs
-applied_files/migrations
-/applied_files/gitlab/
-/applied_files/udap/tmp/
+/wf_old/config.json
+/.mypy_cache/

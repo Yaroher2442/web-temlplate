@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package test;
+
+message TestStructDTO{
+  string data = 1;
+}
+
+message TestStructResp{
+  string data = 1;
+}
+
+message TestStructRequest {
+  TestStructDTO test = 1;
+}
+
+message TestStructResponse{
+  TestStructResp test = 1;
+}
+
+service PackageService {
+  rpc GetTest (TestStructRequest) returns (TestStructResponse) {};
+}
